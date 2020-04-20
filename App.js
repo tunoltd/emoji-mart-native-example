@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  *
  * @format
- * @flow
+ * @flow strict-local
  */
 
 import React, {Component} from 'react';
@@ -38,12 +38,6 @@ const localSpriteSheets = {
     '32': require('./node_modules/emoji-datasource-twitter/img/twitter/sheets/32.png'),
     '64': {uri: 'twitter_emoji_64'},
   },
-  messenger: {
-    '16': require('./node_modules/emoji-datasource-messenger/img/messenger/sheets/16.png'),
-    '20': require('./node_modules/emoji-datasource-messenger/img/messenger/sheets/20.png'),
-    '32': require('./node_modules/emoji-datasource-messenger/img/messenger/sheets/32.png'),
-    '64': require('./node_modules/emoji-datasource-messenger/img/messenger/sheets/64.png'),
-  },
   facebook: {
     '16': require('./node_modules/emoji-datasource-facebook/img/facebook/sheets/16.png'),
     '20': require('./node_modules/emoji-datasource-facebook/img/facebook/sheets/20.png'),
@@ -76,10 +70,6 @@ export default class App extends Component {
 
   onPressTwitter = () => {
     this.setState({set: 'twitter'});
-  };
-
-  onPressMessenger = () => {
-    this.setState({set: 'messenger'});
   };
 
   onPressFacebook = () => {
@@ -136,14 +126,6 @@ export default class App extends Component {
           <TouchableOpacity
             style={[
               styles.btn,
-              this.state.set === 'messenger' ? styles.btnActive : null,
-            ]}
-            onPress={this.onPressMessenger}>
-            <Text>messenger</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[
-              styles.btn,
               this.state.set === 'facebook' ? styles.btnActive : null,
             ]}
             onPress={this.onPressFacebook}>
@@ -177,6 +159,7 @@ export default class App extends Component {
             this.emojiSelectTrigger(emoji);
             this.showPickerTrigger(false);
           }}
+          theme="auto"
         />
       </View>
     );
