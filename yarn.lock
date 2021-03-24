@@ -2308,10 +2308,13 @@ emoji-datasource-twitter@^5.0.1:
   resolved "https://registry.yarnpkg.com/emoji-datasource-twitter/-/emoji-datasource-twitter-5.0.1.tgz#a4e1c85e4def8235cadbcd85fbce32a2335d165c"
   integrity sha512-PiQav2Y6V/P3FjA6p5GJRhzbINv/yc6pn/YCuyJFmk/ZZzI++COXyPCC7SUv9HUeKnJWK+gdj1josUK0vCjvvA==
 
-emoji-mart-native@^v0.6.0-beta:
-  version "0.5.0-beta"
-  resolved "https://registry.yarnpkg.com/emoji-mart-native/-/emoji-mart-native-0.5.0-beta.tgz#228b786ff2d4c8abd1c0d6230d89506e164643b6"
-  integrity sha512-g3rM2T73X9qTiJ8pYuSrxUDBEH9DakrG/acCqZjUoOw2kqvLI89SpQI8VqB+E1AmbMyeHDWbHS2eBF8TyIdmRA==
+emoji-mart-native@^v0.6.2-beta:
+  version "0.6.2-beta"
+  resolved "https://registry.yarnpkg.com/emoji-mart-native/-/emoji-mart-native-0.6.2-beta.tgz#18b007897d25de8f6ed9099005ea99062bfe63e7"
+  integrity sha512-dCT7lyBieP9/zE3goiHbd7qH20SMvs3wUcMSogFjQ42cVQ5bKiWpPVwsfl5uRYF1CPNWU93hZygr4iAtgqIjDQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    prop-types "^15.6.0"
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -5229,7 +5232,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
